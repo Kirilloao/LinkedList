@@ -15,6 +15,11 @@ struct ContentView: View {
                     Image(systemName: "person.2.fill")
                     Text("Contacts")
                 }
+            AllContactsView()
+                .tabItem {
+                    Image(systemName: "phone")
+                    Text("Numbers")
+                }
         }
         .background(.white)
     }
