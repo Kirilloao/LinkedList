@@ -53,6 +53,7 @@
 			children = (
 				3C1609AD2A9B9729008BAA8F /* LinkedListApp.swift */,
 				3C1609AF2A9B9729008BAA8F /* ContentView.swift */,
+				3C1609BB2A9B9775008BAA8F /* Models */,
 				3C1609B12A9B972A008BAA8F /* Assets.xcassets */,
 				3C1609B32A9B972A008BAA8F /* Preview Content */,
 			);
@@ -65,6 +66,13 @@
 				3C1609B42A9B972A008BAA8F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3C1609BB2A9B9775008BAA8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
