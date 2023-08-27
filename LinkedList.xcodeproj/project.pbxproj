@@ -14,6 +14,7 @@
 		3C1609BD2A9B97C1008BAA8F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1609BC2A9B97C1008BAA8F /* Person.swift */; };
 		3C1609C12A9B97E2008BAA8F /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1609C02A9B97E2008BAA8F /* DataStore.swift */; };
 		3C1609C32A9B98E3008BAA8F /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1609C22A9B98E3008BAA8F /* ContactListView.swift */; };
+		3C1609C52A9B9E8A008BAA8F /* ContactDetailtsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1609C42A9B9E8A008BAA8F /* ContactDetailtsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		3C1609BC2A9B97C1008BAA8F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		3C1609C02A9B97E2008BAA8F /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		3C1609C22A9B98E3008BAA8F /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		3C1609C42A9B9E8A008BAA8F /* ContactDetailtsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailtsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				3C1609AD2A9B9729008BAA8F /* LinkedListApp.swift */,
 				3C1609AF2A9B9729008BAA8F /* ContentView.swift */,
 				3C1609C22A9B98E3008BAA8F /* ContactListView.swift */,
+				3C1609C42A9B9E8A008BAA8F /* ContactDetailtsView.swift */,
 				3C1609BB2A9B9775008BAA8F /* Models */,
 				3C1609BF2A9B97D6008BAA8F /* Services */,
 				3C1609B12A9B972A008BAA8F /* Assets.xcassets */,
@@ -167,6 +170,7 @@
 				3C1609C12A9B97E2008BAA8F /* DataStore.swift in Sources */,
 				3C1609B02A9B9729008BAA8F /* ContentView.swift in Sources */,
 				3C1609AE2A9B9729008BAA8F /* LinkedListApp.swift in Sources */,
+				3C1609C52A9B9E8A008BAA8F /* ContactDetailtsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,9 @@ struct ContactListView: View {
     var body: some View {
         NavigationStack {
             List(contacts) { contact in
-                Text(contact.fullName)
+                NavigationLink(destination: ContactDetailtsView(person: contact)) {
+                    Text(contact.fullName)
+                }
             }
             .navigationTitle("Contact List")
             .listStyle(.plain)
