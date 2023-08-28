@@ -16,6 +16,7 @@ struct ContactDetailsView: View {
                 .resizable()
                 .frame(width: 100, height: 100)
                 .padding()
+                .foregroundColor(.blue)
             Divider()
             HStack {
                 VStack(alignment: .leading, spacing: 20) {
@@ -42,7 +43,11 @@ struct ContactDetailsView: View {
 
 struct ContactDetailtsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetailsView(person: Person(name: "123", surname: "123", phoneNumber: "362044520468", email: "kirill@gmail.com"))
-        
+        ContactDetailsView(person: Person(
+            name: "123",
+            surname: "123",
+            phoneNumber: "362044520468",
+            email: "kirill@gmail.com"
+        ))
     }
 }

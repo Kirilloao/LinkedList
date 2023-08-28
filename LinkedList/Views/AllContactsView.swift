@@ -16,15 +16,20 @@ struct AllContactsView: View {
             List {
                 ForEach(contacts) { contact in
                     Section(header: Text(contact.fullName)) {
-                        Text(contact.phoneNumber)
-                        Text(contact.email)
+                        ContactRowView(
+                            imageName: "phone",
+                            text: contact.phoneNumber
+                        )
+                        ContactRowView(
+                            imageName: "tray",
+                            text: contact.email
+                        )
                     }
                 }
             }
             .navigationTitle("Contact List")
             .listStyle(.plain)
         }
-  
     }
 }
 

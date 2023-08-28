@@ -9,17 +9,20 @@ import SwiftUI
 
 struct ContactRowView: View {
     
-    let contact: Person
+    let imageName: String
+    let text: String
     
     var body: some View {
         HStack {
-            
+            Image(systemName: imageName)
+                .foregroundColor(.blue)
+            Text(text)
         }
     }
 }
 
 struct ContactRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactRowView(contact: Person(name: "Kirill", surname: "Taraturin", phoneNumber: "98679444092", email: "kirilltaraturin747@gmail.com"))
+        ContactRowView(imageName: "phone", text: "123123")
     }
 }
