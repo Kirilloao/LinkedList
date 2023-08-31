@@ -25,10 +25,11 @@ extension Person {
         
         var persons = [Person]()
         
-        let names = DataStore.shared.names.shuffled()
-        let surnames = DataStore.shared.surnames.shuffled()
-        let phones = DataStore.shared.numbers.shuffled()
-        let emails = DataStore.shared.emails.shuffled()
+        let dataStore = DataStore.shared
+        let names = dataStore.names.shuffled()
+        let surnames = dataStore.surnames.shuffled()
+        let phones = dataStore.numbers.shuffled()
+        let emails = dataStore.emails.shuffled()
         
         let iterationCount = min(
             names.count,

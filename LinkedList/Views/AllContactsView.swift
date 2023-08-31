@@ -16,14 +16,8 @@ struct AllContactsView: View {
             List {
                 ForEach(contacts) { contact in
                     Section(header: Text(contact.fullName)) {
-                        ContactRowView(
-                            imageName: "phone",
-                            text: contact.phoneNumber
-                        )
-                        ContactRowView(
-                            imageName: "tray",
-                            text: contact.email
-                        )
+                        Label(contact.phoneNumber, systemImage: "phone")
+                        Label(contact.email, systemImage: "tray")
                     }
                 }
             }
