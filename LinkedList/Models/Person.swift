@@ -21,11 +21,12 @@ struct Person: Identifiable {
 }
 
 extension Person {
-    static func getPersons() -> [Person] {
+    static func getContactList() -> [Person] {
         
         var persons = [Person]()
         
         let dataStore = DataStore.shared
+        
         let names = dataStore.names.shuffled()
         let surnames = dataStore.surnames.shuffled()
         let phones = dataStore.numbers.shuffled()

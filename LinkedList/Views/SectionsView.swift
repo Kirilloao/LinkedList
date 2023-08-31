@@ -7,19 +7,18 @@
 
 import SwiftUI
 
-struct AllContactsView: View {
+struct SectionsView: View {
     
-    private let contacts = Person.getPersons()
+    let contacts: [Person]
     
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(contacts) { contact in
-                    Section(header: Text(contact.fullName)) {
-                        Label(contact.phoneNumber, systemImage: "phone")
-                        Label(contact.email, systemImage: "tray")
-                    }
+            List(contacts) { person in
+                Section(header: Text(person.fullName).font(.headline)) {
+                    Label(person.phoneNumber, systemImage: "phone")
+                    Label(person.email, systemImage: "tray")
                 }
+                .textCase(.none)
             }
             .navigationTitle("Contact List")
             .listStyle(.plain)
@@ -29,6 +28,6 @@ struct AllContactsView: View {
 
 struct AllContactsView_Previews: PreviewProvider {
     static var previews: some View {
-        AllContactsView()
+        SectionsView(contacts: Person.getContactList())
     }
 }
